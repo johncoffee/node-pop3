@@ -44,7 +44,7 @@ const msgNum = 1;
 
 (async () => {
 
-  await string = pop3.RETR(msgNum);
+  const string = await pop3.RETR(msgNum);
   // deal with mail string
   await pop3.QUIT();
 
